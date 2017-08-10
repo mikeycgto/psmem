@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'psmem'
+rescue LoadError
+  $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+  require 'psmem'
+end
+
+abort "usage: psmem [processes...]" if ARGV.empty?
+
+Psmem.new(*ARGV).output_results!
