@@ -6,7 +6,7 @@ total memory used by one or more processes.
 ## Usage
 
 ```bash
-psmem chrome bash
+~$ psmem chrome bash
 chrome
 Total Processes:  24
 Total Memory:     4138.85 MB
